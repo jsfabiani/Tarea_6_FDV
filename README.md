@@ -48,3 +48,20 @@ d. Objeto que sigue un comportamiento físico: el cuadrado amarillo, con un Rigi
 
 e. Dos capas asignadas a diferentes objetos: hemos creado otra capa "Ignore Collision," y hemos puesto a la esfera que es arrastrada en esa capa. En los colliders de los otros objetos, hemos marcado que ignoren esa capa en las colisiones.
 ![](https://github.com/jsfabiani/Tarea_6_FDV/blob/main/gifs/FDV_Tarea_6_1-2.gif)
+
+
+### 3. Tilemaps
+Tenemos tres tilemaps:
+![](https://github.com/jsfabiani/Tarea_6_FDV/blob/main/screenshots/tileset_screenshot_1.png)
+Un tilemap para el suelo. Tiene la tag "Floor" para interactuar con el personaje jugable. Tiene un Composite Collider 2D para que todas las tiles cuenten como un mismo objeto para colisiones.
+
+![](https://github.com/jsfabiani/Tarea_6_FDV/blob/main/screenshots/tileset_screenshot_2.png)
+Un tilemap para el decorado. Está en la capa "NoCollisions" para que ignore colisiones con el personaje jugable.
+
+![](https://github.com/jsfabiani/Tarea_6_FDV/blob/main/screenshots/tileset_screenshot_3.png)
+Un tilemap para obstáculos. Tiene también la tag "Floor." Tiene componente Tilemap Collider, cada obstáculo cuenta como un objeto individual para colisiones.
+
+Los tilemaps están puestos en una capa de renderizado propia, que se renderiza antes que el resto de objetos. El orden de renderizado es: 1. suelo, 2. decorado, 3. obstáculos. Así los obstáculos están por delante del resto de tilemaps.
+
+
+### 4. Físicas

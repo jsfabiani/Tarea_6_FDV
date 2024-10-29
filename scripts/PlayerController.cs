@@ -20,7 +20,7 @@ public class PlayerController : MonoBehaviour
     public float doubleJumpScore = 100.0f;
     private bool doubleJumpSpent = false;
     private bool doubleJumpEnabled = false;
-    public GameObject ScoreCounterObject;
+    private GameObject ScoreCounterObject;
     private GameObject PowerUpMessageObject;
     private TextMeshProUGUI scoreCounter;
     private TextMeshProUGUI powerUpMessage;

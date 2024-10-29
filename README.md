@@ -37,8 +37,14 @@ Se activa el Collider2D. El objeto con físicas no empuja al cinemático.
 
 ### 2. Incorporar elementos físicos.
 Hemos incorporado cuatro elementos:
+
 a. Una barrera infranqueable: el rectángulo naranja con Collider y Rigidbody en modo Kinematic, que bloquea objetos y no le afectan las físicas.
+
 b. Zona de impulso: el hexágono verde, con un componente de Area Effector 2D. El Collider está marcado como Trigger para que no bloquee a los objetos.
+
 c. Un objeto arrastrado por otro a una distancia fija: el círculo marrón, arrastrada por un Distance Joint 2D que hemos puesto en la esfera del jugador.
+
 d. Objeto que sigue un comportamiento físico: el cuadrado amarillo, con un Rigidbody marcado como Dynamic.
+
 e. Dos capas asignadas a diferentes objetos: hemos creado otra capa "Ignore Collision," y hemos puesto a la esfera que es arrastrada en esa capa. En los colliders de los otros objetos, hemos marcado que ignoren esa capa en las colisiones.
+![](https://github.com/jsfabiani/Tarea_6_FDV/blob/main/gifs/FDV_Tarea_6_1-2.gif)
